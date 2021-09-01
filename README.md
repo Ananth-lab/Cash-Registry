@@ -1,5 +1,5 @@
 
-# Casy registry
+# Cash registry
 A web-app which will ease cash returning process to avoid loss. This app tell how much money should returned in a sequence of note ordered in descending order.
 
 ## Acknowledgements
