@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 :root {
-	--heading: #0051ff;
-	--input-bg: #0ff841;
+	--heading: #000000;
+	--input-bg: rgba(240, 240, 240, 0.438);
 	--input-border: #252525;
 	--font-color: #1f2933;
 }
@@ -12,39 +12,46 @@
 body {
 	font-family: 'Montserrat', sans-serif;
 	color: var(--font-color);
+	background-image: url("https://images.unsplash.com/photo-1564951434112-64d74cc2a2d7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1868&q=80");
+	background-size: cover;
+	
+
 }
 .container {
-	display: block;
 	max-width: 550px;
-	margin: auto;
+	margin : 10rem auto;
 	padding: 1rem;
 	border-radius: 8px;
-	box-shadow: var(--shadow);
+	background-image :linear-gradient(rgb(14, 196, 252), pink);
+	box-shadow : 1rem 1rem 5rem rgb(39, 224, 248) ;
+
 }
 h1 {
 	text-align: center;
 	margin: 0.5rem auto;
-	font-weight: 500;
+	font-weight: 800;
 	font-size: 40px;
 	color: var(--heading);
+	padding-bottom: 1rem;
 }
 p {
 	text-align: center;
 }
 input::placeholder {
-	color: #f0f0f0;
+	color: 
+	rgb(0, 0, 0);
 }
 input {
-	color: #ffffff;
+	color: #e6e6e6;
 	display: block;
 	font-size: 18px;
-	width: 50%;
+	width: 40%;
 	height: 10px;
 	padding: 1rem;
 	margin: 1rem auto;
 	border-radius: 50px;
-	background-color: var(--input-bg);
-	border: 3px solid var(--input-border);
+	background-image: linear-gradient(rgb(9, 176, 253), rgb(250, 243, 243));
+	
 }
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
@@ -58,12 +65,12 @@ input:focus {
 .button {
 	font-size: 18px;
 	display: block;
-	width: 50%;
-	margin: auto;
+	width: 20%;
+	margin:  auto;
 	padding: 6px 15px;
 	border-radius: 50px;
 	color: #ffffff;
-	background-color: #3b82f6;
+	background-image: linear-gradient(rgb(192, 192, 192),blue);
 	border: 3px solid #3b82f6;
 	cursor: pointer;
 	text-align: center;
