@@ -1,9 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 :root {
-	--heading: #000000;
+	--heading: #ffffff;
 	--input-bg: rgba(240, 240, 240, 0.438);
 	--input-border: #252525;
 	--font-color: #1f2933;
+	--input-color :#070707;
+	--button-color : #ffffff;
+	--button-border :#3b82f6;
 }
 * {
 	margin: 0;
@@ -12,18 +15,19 @@
 body {
 	font-family: 'Montserrat', sans-serif;
 	color: var(--font-color);
-	background-image: url("https://images.unsplash.com/photo-1564951434112-64d74cc2a2d7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1868&q=80");
 	background-size: cover;
 	
 
 }
 .container {
-	max-width: 550px;
-	margin : 10rem auto;
+	max-width :500px;
+	margin : 2rem auto;
 	padding: 1rem;
-	border-radius: 8px;
+	border-radius: 1rem;
 	background-image :linear-gradient(rgb(14, 196, 252), pink);
-	box-shadow : 1rem 1rem 5rem rgb(39, 224, 248) ;
+	background-size: cover;
+	box-shadow : 1rem -1rem 5rem rgb(39, 224, 248) ;
+	
 
 }
 h1 {
@@ -39,10 +43,10 @@ p {
 }
 input::placeholder {
 	color: 
-	rgb(0, 0, 0);
+	var(--input-color)
 }
 input {
-	color: #e6e6e6;
+	color: var(--input-color);
 	display: block;
 	font-size: 18px;
 	width: 40%;
@@ -52,12 +56,6 @@ input {
 	border-radius: 50px;
 	background-image: linear-gradient(rgb(9, 176, 253), rgb(250, 243, 243));
 	
-}
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
 }
 input:focus {
 	outline: none;
@@ -69,9 +67,9 @@ input:focus {
 	margin:  auto;
 	padding: 6px 15px;
 	border-radius: 50px;
-	color: #ffffff;
+	color: var(--button-color);
 	background-image: linear-gradient(rgb(192, 192, 192),blue);
-	border: 3px solid #3b82f6;
+	border: 4px solid var(--button-border);
 	cursor: pointer;
 	text-align: center;
 	transition: all 250ms;
@@ -105,4 +103,26 @@ td {
 	margin: auto;
 	padding: 0.5rem 2rem;
 	border: 2px solid #4a4d72;
+}
+.footer{
+	margin : auto;
+	max-width : 500px;
+	background-image :linear-gradient(rgb(14, 196, 252), pink);
+	text-align: center;
+	box-shadow : -1rem 1rem 5rem rgb(39, 224, 248) ;
+	border-radius: 1rem;
+}
+.footer-links{
+	padding:1%;
+	padding: 2rem 0;
+}
+li{
+	display:inline;
+	padding :1rem;
+	
+}
+img{
+	width : 3rem;
+	height : 3rem;
+
 }
